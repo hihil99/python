@@ -12,7 +12,7 @@ load_dotenv()
 port = 465
 filename = 'receivers.csv'
 
-sender = os.getenv('EMAIL') if 'EMAIL' in os.environ else getpass("Type your email and press enter: ")
+sender = os.getenv('EMAIL') if 'EMAIL' in os.environ else input("Type your email and press enter: ")
 password = os.getenv('PASSWORD') if 'PASSWORD' in os.environ else getpass("Type your password and press enter: ")
 
 context = ssl.create_default_context()
